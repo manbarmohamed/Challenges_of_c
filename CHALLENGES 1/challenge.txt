@@ -1,0 +1,70 @@
+ALGORITHME CHALLENGE1
+VARIABLES
+	N1,N2,N3,MAX:ENTIER
+DEBUT
+	ECRIRE("ENTRER LES TROI NOMBRES: ")
+	LIRE(N1,N2,N3)
+	MAX<--N1
+	si (N2>MAX) alors
+		MAX <-- N2
+	si (N3>MAX)
+		MAX<-- N3
+	fin si
+	ecrire ("le max est : ",MAX)
+
+FIN
+============================
+ALGORITHME CHALLENGE2
+VARIABLES
+	i:ENTIER
+DEBUT
+	i<--1
+	repeter
+		ecrire(i,"*8=",i*8)
+		ecrire(\n)
+		i<--i+1
+	jusqu'a i<=10
+FIN
+================================
+ALGORITHME CHALLENGE3
+VARIABLES
+	count,N:ENTIER
+DEBUT
+	ecrire("entrer un nombre entier:")
+	lire(N)
+	si N<--0 alors
+		count<--1
+	sinon
+		tant que N<>0 faire
+			N<--N/10
+			count++
+		fin tant que
+	fin si
+	ecrire("le nombre de chiffres est:",count)
+FIN
+==============================
+ALGORITHME CHALLENGE4
+	procedure Somme_Produit(x:intier,y:intier)
+		variables
+			somme,produit:entier
+		debut
+			somme<--x+y
+			produit<--x*y
+			si somme>0
+				ecrire("la somme est positif")
+			sinon
+				ecrire("la somme est negatif")
+			finsi
+			si produit>0
+				ecrire("la produit est positif")
+			sinon
+				ecrire("la produit est negatif")
+			finsi
+		fin
+	variables
+		x,y:entier
+debut
+	ecrire("entrer les deux nombre: ")
+	lire(x,y)
+	Somme_Produit(x,y)
+fin
