@@ -1,0 +1,194 @@
+ALGORITHME Max
+Variables
+	A,B,MAX : Entier
+Début
+	ecrire("entrer la valeur de A: ")
+	lire(A)
+	ecrire("entrer la valeur de B: ")
+	lire(B)
+	MAX<==A
+	si (B>MAX) alors
+		MAX <== B
+	fin si
+	ecrire ("le max est : ",MAX)
+fin
+
+========================
+ALGORITHME division
+variables
+	A,B:Entier
+Début
+	ecrire("entrer la valeur de A: ")
+	lire(A)
+	ecrire("entrer la valeur de B: ")
+	lire(B)
+	si(B<>0) alors
+		ecrire("le resultat est: ",A/B)
+	si non
+		ecrire("la divisionsur 0 est impossible")
+	finsi
+fin
+=====================
+ALGORITHME nature_nombre
+Variables 
+	n:entier
+Début
+	ecrire("entrer la valeur de n: ")
+	lire(n)
+	si (n>0) alors
+		ecrire("n est positif")
+	si non
+		si(n=0) alors
+			ecrire("n est null")
+		si non
+			ecrire("n est negatif")
+		finsi
+	finsi
+fin
+
+++++++++++++++++++++++++++++
+ALGORITHME jour_semaine
+variables
+	n:entier
+debut
+	ecrire("enter number between 1 and 7: ")
+	lire(n)
+	cas n vaut
+		1:ecrire("Monday")
+		2:ecrire("tuesday")
+		3:ecrire("wednesday")
+		4:ecrire("thursday")
+		5:ecrire("friday")
+		6:ecrire("saturday")
+		7:ecrire("sunday")
+		sinon :ecrire("number incorrect")
+	fin cas
+fin
+++++++++++++++++++++++
+ALGORITHME TABLE7
+Variables
+	M,I:Entier
+debut
+	pour i<==0 a 10 pas 1 faire
+		M<==i*7
+		ecrire(i,"*7 = ",M)
+	fin pour
+fin
+
+=========================================
+la somme de 20 premiere entier positif
+ALGORITHME Somme
+variables 
+	S,I:enter
+début
+	S<==0
+	pour i<==1 a 20 pas 1 faire
+		S<==S+i
+	fin pour
+	ecrire("la somme de 20 premiere entier positif est : ", S)
+fin	
+====================
+TABLE DE MULTIPLICATION
+ALGORITHME TM
+Variables
+	M,I,N:Entier
+Début
+	ecrire("entrer un nombre entre 1 et 10:")
+	lire(N)
+	Tant que N<1 ou N>10 faire
+		ecrire("entrer un nombre entre 1 et 10:")
+		lire(N)
+	fin Tant que
+	pour I<==0 a 10 pas 1 faire
+		M<==I*N
+		ecrire(I,"*",N,"=",M)
+	fin pour
+Fin
+======================================
+TABLE DE MULTIPLICATION
+ALGORITHME TM
+Variables
+	M,I,N:Entier
+Début
+	Repeter
+		ecrire("entrer un nombre entre 1 et 10:")
+		lire(N)
+	jusqu'a N>1 ou N<=10
+	pour I<==0 a 10 pas 1 faire
+		M<==I*N
+		ecrire(I,"*",N,"=",M)
+	fin pour
+Fin
+==============================
+ALGORITHME Nombre
+Variables 
+	N:entier
+Début
+	ecrire("entrer un nombre entre 10 et 20 ")
+	lire(N)
+	tant que N<10 ou N>20 faire
+		si N<10
+			ecrire("plus petit!")
+		finsi
+		si N>20
+			ecrire("plus grand!")
+		finsi
+		ecrire("entrer un nombre entre 10 et 20 ")
+		lire(N)
+	fin tant que
+	ecrire("le nombre vous avez entrez entre 10 et 20")
+fin
+==========================
+ALGORITHME Somme
+Variables
+	I,N,S:Entier
+Début
+	repeter
+		ecrire("entrer un nombre: ")
+		lire(N)
+	jusqu'a N>1
+	s<==0
+	pour i<==1 a N pas 1 faire
+		S<==S+I
+	fin pour
+	ecrire("la somme est: ",S) 
+Fin
+===========================
+les fonctions
+
+ALGORITHME ex_fonction
+
+	Fonction puissance(N:entier):entier
+		variables
+			P:entier
+		debut
+			P<--N^2
+		fin
+	variables
+		x:entier
+debut
+	ecrire("entrer un nombre")
+	lire(x)
+	ecrire("la puissance du nombre",x,"est",puissance(x))
+fin
+=====================
+ex_fonction
+ALGORITHME MIN
+	fonction minimum(x:entier,y:entier):entier
+		variable
+			min:entier
+		debut
+			si x>=y alors
+				min<--y
+			sinon
+				min<--x
+			fin si
+			retourne min
+		fin
+	variables
+		x,y:entier
+debut
+	ecrire("entrer deux nombre: ")
+	lire(x,y)
+	ecrire("le minimum est: ",minimum(x,y))
+fin
